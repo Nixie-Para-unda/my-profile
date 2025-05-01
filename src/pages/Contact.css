@@ -1,0 +1,137 @@
+.contact-page {
+    padding: 0;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .contact-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .contact-info > p {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .contact-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+
+  .contact-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+  }
+  
+  .contact-text p a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .contact-text p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Form */
+  .contact-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  }
+  
+  .btn.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.submit-btn:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  /* Form Status Messages */
+  .form-status {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .form-status.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .form-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

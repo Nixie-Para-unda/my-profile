@@ -1,0 +1,132 @@
+.about-page {
+    padding: 0;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about-text {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+  
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin-bottom: 3rem;
+  }
+  
+  .skills-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .skill-category {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .skill-category h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+  }
+  
+  .skills-list li {
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  .skills-list li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* Interests Section */
+  .interests-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .interests-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .interest-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+  }
+  
+  .interest-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .interest-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .interest-item h3 {
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+  }
+  
+  .interest-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  @media screen and (max-width: 992px) {
+    .skills-container,
+    .interests-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skills-container,
+    .interests-container {
+      grid-template-columns: 1fr;
+    }
+  }
